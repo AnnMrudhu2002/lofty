@@ -40,8 +40,107 @@ body{
   background: linear-gradient(to bottom, var(--bg1), var(--bg2));
   color:var(--text);
   overflow-x:hidden;
+   padding-top: 70px;
+}
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+
+  .slideshow {
+    height: 450px;
+  }
 }
 
+/* Mobile phones */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .slideshow {
+    height: 300px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero {
+    padding: 15px;
+  }
+
+  .contact-box {
+    padding: 18px;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .slideshow {
+    height: 220px;
+  }
+
+  .popup-card {
+    width: 90%;
+  }
+}
 /* ---------------- SPARKLES ---------------- */
 .stars span{
   position:absolute;
